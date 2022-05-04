@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parse should collect keys from 1 file 1`] = `
+Object {
+  "test": Object {
+    "keys": Array [
+      "foo.bar",
+      "foo.bar.baz",
+    ],
+  },
+}
+`;
+
+exports[`parse should collect keys from a common file 1`] = `
+Object {
+  "common": Object {
+    "keys": Array [
+      "foo.bar",
+      "foo.bar.baz",
+    ],
+  },
+}
+`;
+
+exports[`parse should collect keys from jsx 1`] = `
+Object {
+  "test": Object {
+    "keys": Array [
+      "foo",
+    ],
+  },
+  "test1": Object {
+    "keys": Array [
+      "bar",
+    ],
+  },
+}
+`;
+
+exports[`parse should collect keys from multiple files 1`] = `
+Object {
+  "test": Object {
+    "keys": Array [
+      "foo",
+      "foo.bar",
+    ],
+  },
+  "test1": Object {
+    "keys": Array [
+      "foo.bar",
+      "foo.bar.baz",
+    ],
+  },
+}
+`;

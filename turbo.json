@@ -1,0 +1,19 @@
+{
+  "baseBranch": "origin/main",
+  "pipeline": {
+    "dev": {
+      "cache": false,
+      "dependsOn": ["@hiroppy/i18n-json-webpack-plugin#build"]
+    },
+    "build": {
+      "outputs": ["lib/**"]
+    },
+    "test": {
+      "outputs": ["coverage/**"]
+    },
+    "lint": {},
+    "@hiroppy/i18n-json-webpack-plugin#build": {
+      "dependsOn": ["@hiroppy/i18n-json-core#build"]
+    }
+  }
+}

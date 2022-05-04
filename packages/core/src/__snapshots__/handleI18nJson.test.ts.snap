@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`handleI18nJson should add keys to a nested object 1`] = `
+"{
+  \\"components\\": {
+    \\"foo\\": \\"\\"
+  },
+  \\"foo\\": {
+    \\"bar\\": {
+      \\"baz\\": \\"\\"
+    }
+  }
+}"
+`;
+
+exports[`handleI18nJson should create a JSON file 1`] = `"{}"`;
+
+exports[`handleI18nJson should remove empty keys from an object 1`] = `
+Object {
+  "bar": Object {},
+  "nested": Object {
+    "bar": Object {},
+  },
+}
+`;

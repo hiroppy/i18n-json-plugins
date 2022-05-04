@@ -1,0 +1,5 @@
+node_modules
+lib
+.turbo
+yarn-error.log
+.next
